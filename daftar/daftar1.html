@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harmony Threads</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./vendors/assets/dist/css/bootstrap.min.css" />
+    <script src="./vendors/assets/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./daftar.css" />
+  </head>
+  <body>
+    <div class="galery">
+      <img src="../img/Lacoste Produk/PAJANGAN 4 - Copy.png" alt="Gallery Image" />
+    </div>
+
+    <div class="container">
+      <form id="registration-form" autocomplete="off">
+        <h4>Pendaftaran Akun</h4>
+        <div class="input-section">
+          <label>Nama Depan<span class="required-color">*</span></label>
+          <input type="text" placeholder="Masukan Nama Depan" id="first-name-input" required />
+          <span id="first-name-error" class="hide required-color error-message">Inputan tidak valid</span>
+          <span id="empty-first-name" class="hide required-color error-message">Nama Depan tidak boleh dikosongkan</span>
+        </div>
+        <div class="input-section">
+          <label>Nama Belakang<span class="required-color">*</span></label>
+          <input type="text" placeholder="Masukan Nama Belakang" id="last-name-input" required />
+          <span id="last-name-error" class="hide required-color error-message">Inputan tidak valid</span>
+          <span id="empty-last-name" class="hide required-color error-message">Nama Belakang tidak boleh dikosongkan</span>
+        </div>
+        <div class="input-section">
+          <label>Email<span class="required-color">*</span></label>
+          <input type="email" placeholder="Masukan Email" id="email-input" required />
+          <span id="email-error" class="hide required-color error-message">Inputan tidak valid</span>
+          <span id="empty-email" class="hide required-color error-message">Email tidak boleh dikosongkan</span>
+        </div>
+        <div class="input-section">
+          <label>Nomor Telepon<span class="required-color">*</span></label>
+          <input type="text" placeholder="Masukan No Telepon" id="phone-input" required />
+          <span id="phone-error" class="hide required-color error-message">No telepon harus terdiri 12 digit angka</span>
+          <span id="empty-phone" class="hide required-color error-message">No Telepon tidak boleh dikosongkan</span>
+        </div>
+        <div class="input-section">
+          <label>Password<span class="required-color">*</span></label>
+          <input type="password" placeholder="Masukan Password" id="password-input" required />
+          <span id="password-error" class="hide required-color error-message">Password harus 8 karakter</span>
+          <span id="empty-password" class="hide required-color error-message">Password tidak boleh dikosongkan</span>
+        </div>
+        <div class="input-section">
+          <label>Konfirmasi Password<span class="required-color">*</span></label>
+          <input type="password" placeholder="Ulangi Password" id="verify-password-input" required />
+          <span id="verify-password-error" class="hide required-color error-message">Harus sama dengan password sebelumnya</span>
+          <span id="empty-verify-password" class="hide required-color error-message">Password tidak boleh dikosongkan</span>
+        </div>
+        <button type="submit" id="submit-button" class="btn btn-primary1 w-100 py-2">Daftar</button>
+      </form>
+    </div>
+
+    <script src="./daftar.js"></script>
+  </body>
+</html>

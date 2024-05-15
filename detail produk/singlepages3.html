@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harmony Threads</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./vendors/assets/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./vendors/assets/dist/js/bootstrap.bundle.min.js" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./stylepages.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Harmony<strong>Threads.</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+          <form class="d-flex ms-auto" role="search">
+            <input class="form-control me-2" type="search" placeholder="Cari Sepatu Kamu!" aria-label="Cari" />
+            <button class="btn btn-light" type="submit">Cari</button>
+          </form>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#produk">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../daftar/daftar1.html">Daftar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../masuksinglepages/masuk4.html">Masuk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Keranjang</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>   
+
+<!-- BREADCUMP -->
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html" class="text-decoration-none">Beranda</a></li>
+          <li class="breadcrumb-item"><a href="../index.html#kategori sepatu" class="text-decoration-none">kategori</a></li>
+          <li class="breadcrumb-item"><a href="../index.html#carouselExampleControls" class="text-decoration-none">Baju</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Pilih Baju Kesukaanmu</li>
+        </ol>
+      </nav>
+</div>
+
+<!-- PRODUK SENDIRI -->
+<div class="container">
+    <div class="row row-produk">
+        <div class="col-lg-5">
+          <figure class="figure">
+            <img id="main-image" src="../img/Lacoste Produk/PRODUK LACOSTE 3.png" class="figure-img img-fluid" style="border-radius: 5px; width: 450px;" alt="...">
+            <figcaption class="figure-caption d-flex justify-content-center gap-3">
+              <a href="#" onclick="changeImage('../img/Lacoste Produk/SHOW PRODUK 3.1.png')">
+                <img src="../img/Lacoste Produk/SHOW PRODUK 3.1.png" class="figure-img img-fluid" style="border-radius: 5px; width: 70px;" alt="...">
+              </a>              
+              <a href="#" onclick="changeImage('../img/Lacoste Produk/SHOW PRODUK 3.2.png')">
+                <img src="../img/Lacoste Produk/SHOW PRODUK 3.2.png" class="figure-img img-fluid" style="border-radius: 5px; width: 70px;" alt="...">
+              </a>
+              <a href="#" onclick="changeImage('../img/Lacoste Produk/SHOW PRODUK 3.3.png')">
+                <img src="../img/Lacoste Produk/SHOW PRODUK 3.3.png" class="figure-img img-fluid" style="border-radius: 5px; width: 70px;" alt="...">
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+        
+                <div class="col-lg-6">
+                    <div>
+                        <h4>Lacoste Short Recycled Polyester</h4>
+                        <div class="garis-produk"></div>
+                        <p>HITAM 031</p>
+                        <h3 class="text-muted">Rp. 3.299.000</h3>
+        
+                        <div class="mb-3">
+                            <label for="selectSize" class="form-label">Pilih Ukuran:</label>
+                            <select class="form-select" id="selectSize">
+                                <option selected>Pilih Ukuran</option>
+                                <option value="size-41">Size S</option>
+                                <option value="size-41">Size M</option>
+                                <option value="size-41">Size L</option>
+                                <option value="size-41">Size XL</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="inputQuantity" class="form-label">Jumlah:</label>
+                            <input type="number" class="form-control" id="inputQuantity" value="1" min="1">
+                        </div>
+
+                        <div class="btn-produk">
+                            <a href="#" class="btn btn-dark btn-lg"><i class="fas fa-shopping-cart fs-6 me-2"></i>Tambah Keranjang</a>
+                            <a href="#" class="btn btn-secondary btn-lg">Beli Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- FOOTERS -->
+    <footer class="bg-light text-dark pt-5 pb-4" style="margin-left: -10px; margin-top: 50px;">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold"><strong>Tentang Kami</strong></h5>
+            <hr class="mb-4">
+            <p>Kami adalah platform yang menjual sepatu bekas yang memungkinkan pembeli untuk memilih sepatu impianmu yang masih layak pakai. Kami menyediakan pengalaman aman dan mudah bagi pembeli untuk menemukan sepatu berkualitas dengan harga terjangkau, sambil memberikan kesempatan kepada pembeli untuk mendapatkan nilai dari sepatu. Dengan fokus pada kualitas dan kepuasan pengguna, kami berkomitmen untuk memfasilitasi perdagangan sepatu bekas yang ramah lingkungan dan bermanfaat bagi semua pihak.</p>
+          </div>
+    
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold"><strong>Merek</strong></h5>
+            <hr class="mb-4">
+            <p>
+              <a href="#" class="text-dark" style="text-decoration: none;">Adidas</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration: none;">Nike</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration: none;">Puma</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration: none;">New Balance</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration: none;">Converse</a>
+            </p>
+          </div>
+    
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold"><strong>Sepatu</strong></h5>
+            <hr class="mb-4">
+            <p>
+              <a href="#produk" class="text-dark" style="text-decoration: none;">Lifistyle</a>
+            </p>
+            <p>
+              <a href="#kategori sepatu" class="text-dark" style="text-decoration: none;">Jordan</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration: none;">Clasics</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration: none;">Suede</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration: none;">Chuck 70</a>
+            </p>
+          </div>
+    
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold"><strong>Hubungi Kami</strong></h5>
+            <hr class="mb-4">
+            <p>
+              <a href="#" class="text-dark" style="text-decoration: none;"><strong>Telepon</strong></a>
+              <p>Silahkan hubungi kami di No 082280548645</p>
+            </p>
+            <p>
+              <a href="#" class="text-dark" style="text-decoration: none;"><strong>Alamat</strong></a>
+              <p>Jl. Madukoro No.6i, Kec. Depok, Kab. Sleman, Desa. Pringgolayan, Yogyakarta 55281</p>
+            </p>
+          </div>
+        </div>
+    
+        <hr class="mb-4">
+        <div class="row d-flex justify-content-center">
+          <div>
+            <p>
+              Copyright 2024 All Rights Reserved By :
+              <a href="https://github.com/kirishima17" style="text-decoration: none;">
+                <strong class="text-info">Steven Andrian</strong>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="text-center">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/steven-andrian-pranata-wicaksono-14a695296/" class="text-dark"><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/steven_andriann/" class="text-dark"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.tiktok.com/@steven_gais" class="text-dark"><i class="fab fa-tiktok"></i></a>
+              </li>              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="./vendors/assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function changeImage(imageUrl) {
+        var mainImage = document.getElementById("main-image");
+        mainImage.src = imageUrl;
+      }
+          </script>
+  </body>
+</html>
